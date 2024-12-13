@@ -8,31 +8,50 @@ namespace BerkleyUpdateCreator
 {
     public class Ticket
     {
-        public int Order { get; set; }
-        public string Link { get; set; }
+        public Guid Id { get; set; }
+        public string titleInput { get; set; }
+        public int? Order { get; set; }
+        public string? Link { get; set; }
         public string Name { get; set; }
-        public string TicketId { get; set; }
+        public string? TicketId { get; set; }
         public List<string> Updates { get; set; } = new List<string>();
 
-        public Ticket(string[] LinkField, string[] UpdatesField,int order) {
+        public Ticket(string[] LinkField, string[] UpdatesField) {
+            Id = Guid.NewGuid();
             if (LinkField.Length < 2) return;
             Link = LinkField[0];
             Name = LinkField[1];
-            Order = order;
             TicketId = Link.Split('/').Last();
             if (UpdatesField != null)
             {
                 Updates = UpdatesField.ToList();
             }
+            titleInput = String.Join("\n", LinkField);
         }
-        public string GetFormattedTicket()
+        public Ticket(string Title, string[] Updates) {
+            titleInput = Title;
+            Name = Title;
+            if (Updates != null)
+            {
+                this.Updates = Updates.ToList();
+            }
+        }
+        public string GetFormattedTicket(int? order = null)
         {
-            if (TicketId == null)
+            StringBuilder sb = new StringBuilder();
+            if (String.IsNullOrEmpty(Link))
+            {
+                sb.AppendLine($"### Task{(order==null ? "" : " "+order)}: {Name}");
+            }
+            else if (TicketId == null)
             {
                 return string.Empty;
+            }else
+            {
+                sb.AppendLine($"### Task {Order}: [{TicketId} {Name}]({Link})");
+
             }
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"### Task {Order}: [{TicketId} {Name}]({Link})");
+            
             if(Updates == null || Updates.Count == 0)
             {
                 sb.AppendLine("- ");
@@ -43,6 +62,11 @@ namespace BerkleyUpdateCreator
             }
             sb.AppendLine();
             return sb.ToString();
+        }
+
+        public override string? ToString()
+        {
+            return Name;
         }
     }
 }
