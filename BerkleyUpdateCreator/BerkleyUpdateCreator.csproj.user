@@ -4,10 +4,16 @@
     <_LastSelectedProfileId>C:\Users\zLc\Desktop\Stefan\Programing\Visual Studio 2020\BerkleyUpdateCreator\BerkleyUpdateCreator\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Update="MainForm.cs">
+    <Compile Update="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="TicketForm.cs">
+    <Compile Update="Forms\MeetingTypesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\TicketForm.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

@@ -3,20 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|c:\\users\\zlc\\desktop\\stefan\\programing\\visual studio 2020\\berkleyupdatecreator\\berkleyupdatecreator\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|solutionrelative:berkleyupdatecreator\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|c:\\users\\zlc\\desktop\\stefan\\programing\\visual studio 2020\\berkleyupdatecreator\\berkleyupdatecreator\\forms\\ticketform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|solutionrelative:berkleyupdatecreator\\forms\\ticketform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|c:\\users\\zlc\\desktop\\stefan\\programing\\visual studio 2020\\berkleyupdatecreator\\berkleyupdatecreator\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|solutionrelative:berkleyupdatecreator\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|c:\\users\\zlc\\desktop\\stefan\\programing\\visual studio 2020\\berkleyupdatecreator\\berkleyupdatecreator\\forms\\settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|solutionrelative:berkleyupdatecreator\\forms\\settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|c:\\users\\zlc\\desktop\\stefan\\programing\\visual studio 2020\\berkleyupdatecreator\\berkleyupdatecreator\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|solutionrelative:berkleyupdatecreator\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|c:\\users\\zlc\\desktop\\stefan\\programing\\visual studio 2020\\berkleyupdatecreator\\berkleyupdatecreator\\forms\\settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|solutionrelative:berkleyupdatecreator\\forms\\settingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|c:\\users\\zlc\\desktop\\stefan\\programing\\visual studio 2020\\berkleyupdatecreator\\berkleyupdatecreator\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|solutionrelative:berkleyupdatecreator\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|c:\\users\\zlc\\desktop\\stefan\\programing\\visual studio 2020\\berkleyupdatecreator\\berkleyupdatecreator\\forms\\meetingtypesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|solutionrelative:berkleyupdatecreator\\forms\\meetingtypesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|c:\\users\\zlc\\desktop\\stefan\\programing\\visual studio 2020\\berkleyupdatecreator\\berkleyupdatecreator\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|solutionrelative:berkleyupdatecreator\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|c:\\users\\zlc\\desktop\\stefan\\programing\\visual studio 2020\\berkleyupdatecreator\\berkleyupdatecreator\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|solutionrelative:berkleyupdatecreator\\forms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|c:\\users\\zlc\\desktop\\stefan\\programing\\visual studio 2020\\berkleyupdatecreator\\berkleyupdatecreator\\sessionstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|solutionrelative:berkleyupdatecreator\\sessionstorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|c:\\users\\zlc\\desktop\\stefan\\programing\\visual studio 2020\\berkleyupdatecreator\\berkleyupdatecreator\\forms\\ticketform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|solutionrelative:berkleyupdatecreator\\forms\\ticketform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|c:\\users\\zlc\\desktop\\stefan\\programing\\visual studio 2020\\berkleyupdatecreator\\berkleyupdatecreator\\forms\\meetingtypesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|solutionrelative:berkleyupdatecreator\\forms\\meetingtypesform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|c:\\users\\zlc\\desktop\\stefan\\programing\\visual studio 2020\\berkleyupdatecreator\\berkleyupdatecreator\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|solutionrelative:berkleyupdatecreator\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|c:\\users\\zlc\\desktop\\stefan\\programing\\visual studio 2020\\berkleyupdatecreator\\berkleyupdatecreator\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E6805918-CA97-4654-B37B-8549EA0C1B81}|BerkleyUpdateCreator\\BerkleyUpdateCreator.csproj|solutionrelative:berkleyupdatecreator\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,22 +54,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 11,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Ticket.cs",
-              "DocumentMoniker": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\Ticket.cs",
-              "RelativeDocumentMoniker": "BerkleyUpdateCreator\\Ticket.cs",
-              "ToolTip": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\Ticket.cs",
-              "RelativeToolTip": "BerkleyUpdateCreator\\Ticket.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAmwCwAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T18:50:55.068Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
@@ -59,43 +73,140 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SettingsForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\Forms\\SettingsForm.cs",
+              "RelativeDocumentMoniker": "BerkleyUpdateCreator\\Forms\\SettingsForm.cs",
+              "ToolTip": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\Forms\\SettingsForm.cs [Design]",
+              "RelativeToolTip": "BerkleyUpdateCreator\\Forms\\SettingsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T21:58:36.386Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SessionStorage.cs",
+              "DocumentMoniker": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\SessionStorage.cs",
+              "RelativeDocumentMoniker": "BerkleyUpdateCreator\\SessionStorage.cs",
+              "ToolTip": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\SessionStorage.cs",
+              "RelativeToolTip": "BerkleyUpdateCreator\\SessionStorage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T21:53:30.872Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Report.cs",
-              "DocumentMoniker": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\Report.cs",
-              "RelativeDocumentMoniker": "BerkleyUpdateCreator\\Report.cs",
-              "ToolTip": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\Report.cs",
-              "RelativeToolTip": "BerkleyUpdateCreator\\Report.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAA0wCEAAAAvAAAA",
+              "Title": "SettingsForm.cs",
+              "DocumentMoniker": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\Forms\\SettingsForm.cs",
+              "RelativeDocumentMoniker": "BerkleyUpdateCreator\\Forms\\SettingsForm.cs",
+              "ToolTip": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\Forms\\SettingsForm.cs",
+              "RelativeToolTip": "BerkleyUpdateCreator\\Forms\\SettingsForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T18:48:01.302Z",
+              "WhenOpened": "2025-01-16T21:43:45.497Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "MeetingTypesForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\Forms\\MeetingTypesForm.cs",
+              "RelativeDocumentMoniker": "BerkleyUpdateCreator\\Forms\\MeetingTypesForm.cs",
+              "ToolTip": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\Forms\\MeetingTypesForm.cs [Design]",
+              "RelativeToolTip": "BerkleyUpdateCreator\\Forms\\MeetingTypesForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T21:53:15.064Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Ticket.cs",
+              "DocumentMoniker": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\Models\\Ticket.cs",
+              "RelativeDocumentMoniker": "BerkleyUpdateCreator\\Models\\Ticket.cs",
+              "ToolTip": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\Models\\Ticket.cs",
+              "RelativeToolTip": "BerkleyUpdateCreator\\Models\\Ticket.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T21:34:41.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Report.cs",
+              "DocumentMoniker": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\Models\\Report.cs",
+              "RelativeDocumentMoniker": "BerkleyUpdateCreator\\Models\\Report.cs",
+              "ToolTip": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\Models\\Report.cs",
+              "RelativeToolTip": "BerkleyUpdateCreator\\Models\\Report.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-16T21:34:21.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MeetingTypesForm.cs",
+              "DocumentMoniker": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\Forms\\MeetingTypesForm.cs",
+              "RelativeDocumentMoniker": "BerkleyUpdateCreator\\Forms\\MeetingTypesForm.cs",
+              "ToolTip": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\Forms\\MeetingTypesForm.cs",
+              "RelativeToolTip": "BerkleyUpdateCreator\\Forms\\MeetingTypesForm.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAkwD8AAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T22:07:06.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TicketForm.cs",
+              "DocumentMoniker": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\Forms\\TicketForm.cs",
+              "RelativeDocumentMoniker": "BerkleyUpdateCreator\\Forms\\TicketForm.cs",
+              "ToolTip": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\Forms\\TicketForm.cs",
+              "RelativeToolTip": "BerkleyUpdateCreator\\Forms\\TicketForm.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBQAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T22:35:28.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TicketForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\Forms\\TicketForm.cs",
+              "RelativeDocumentMoniker": "BerkleyUpdateCreator\\Forms\\TicketForm.cs",
+              "ToolTip": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\Forms\\TicketForm.cs [Design]",
+              "RelativeToolTip": "BerkleyUpdateCreator\\Forms\\TicketForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T22:34:10.093Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\MainForm.cs",
-              "RelativeDocumentMoniker": "BerkleyUpdateCreator\\MainForm.cs",
-              "ToolTip": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\MainForm.cs [Design]",
-              "RelativeToolTip": "BerkleyUpdateCreator\\MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\Forms\\MainForm.cs",
+              "RelativeDocumentMoniker": "BerkleyUpdateCreator\\Forms\\MainForm.cs",
+              "ToolTip": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\Forms\\MainForm.cs [Design]",
+              "RelativeToolTip": "BerkleyUpdateCreator\\Forms\\MainForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T17:43:57.346Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "MainForm.cs",
-              "DocumentMoniker": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\MainForm.cs",
-              "RelativeDocumentMoniker": "BerkleyUpdateCreator\\MainForm.cs",
-              "ToolTip": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\MainForm.cs",
-              "RelativeToolTip": "BerkleyUpdateCreator\\MainForm.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAkwDUAAAAOAAAA",
+              "DocumentMoniker": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\Forms\\MainForm.cs",
+              "RelativeDocumentMoniker": "BerkleyUpdateCreator\\Forms\\MainForm.cs",
+              "ToolTip": "C:\\Users\\zLc\\Desktop\\Stefan\\Programing\\Visual Studio 2020\\BerkleyUpdateCreator\\BerkleyUpdateCreator\\Forms\\MainForm.cs",
+              "RelativeToolTip": "BerkleyUpdateCreator\\Forms\\MainForm.cs",
+              "ViewState": "AQIAAIoAAAAAAAAAAAAiwCEAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T17:35:01.363Z",
               "EditorCaption": ""

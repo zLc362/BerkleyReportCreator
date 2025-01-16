@@ -1,32 +1,46 @@
+using BerkleyUpdateCreator.Forms;
+using BerkleyUpdateCreator.Models;
+using BerkleyUpdateCreator.Properties;
 using System.Windows.Forms;
 
 namespace BerkleyUpdateCreator
 {
     public partial class MainForm : Form
     {
-        public Report report { get; set; }
         public MainForm()
         {
             InitializeComponent();
-            report = new Report();
-
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
+
+        private void UpdateMeetingTypes()
+        {
+
+            meetingType.Items.Clear();
+            meetingType.Items.AddRange(SessionStorage.typeTimeMappings.Keys.ToArray());
+            meetingType.SelectedIndex = 0;
+        }
+        
 
         private void MainForm_Load(object sender, EventArgs e)
         {
+            SessionStorage.JiraCheckedDefault = Settings.Default.JiraTicketChecked;
+
+            foreach (var mapping in Settings.Default.TypeTimeMappings)
+            {
+                var key = mapping.Split("{$*$}")[0];
+                var value = mapping.Split("{$*$}")[1];
+                SessionStorage.typeTimeMappings.Add(key, value);
+            }
+
+            UpdateMeetingTypes();
+
             meetingDate.Value = DateTime.Now;
-            meetingType.SelectedIndex = 0;
         }
 
         private void meetingType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch (meetingType.SelectedIndex)
-            {
-                case 0: meetingTime.Text = "15:30 - 15:45"; break;
-                case 1: meetingTime.Text = "15:30 - 17:30"; break;
-                case 2: meetingTime.Text = "15:00 - 17:00"; break;
-                case 3: meetingTime.Text = "15:00 - 17:30"; break;
-            }
+            meetingTime.Text = SessionStorage.typeTimeMappings[meetingType.Items[meetingType.SelectedIndex].ToString()];
         }
 
         private void btnCreateReport_Click(object sender, EventArgs e)
@@ -45,17 +59,17 @@ namespace BerkleyUpdateCreator
             }
 
 
-            report.Name = meetingType.Text;
-            report.Link = meetingLink.Text;
-            report.Date = meetingDate.Value;
-            report.Time = meetingTime.Text;
-            report.MeetingInfo = meetingInfo.Text;
-            report.Location = meetingLocation.Text;
-            report.Questions = questions.Lines.ToList();
-            report.InternalNotes = internalNotes.Lines.ToList();
-            report.Tickets = ticketsDisplay.Items.Cast<Ticket>().ToList();
+            SessionStorage.report.Name = meetingType.Text;
+            SessionStorage.report.Link = meetingLink.Text;
+            SessionStorage.report.Date = meetingDate.Value;
+            SessionStorage.report.Time = meetingTime.Text;
+            SessionStorage.report.MeetingInfo = meetingInfo.Text;
+            SessionStorage.report.Location = meetingLocation.Text;
+            SessionStorage.report.Questions = questions.Lines.ToList();
+            SessionStorage.report.InternalNotes = internalNotes.Lines.ToList();
+            SessionStorage.report.Tickets = ticketsDisplay.Items.Cast<Ticket>().ToList();
 
-            outputTextBox.Text = report.GetReport();
+            outputTextBox.Text = SessionStorage.report.GetReport();
 
         }
 
@@ -71,11 +85,6 @@ namespace BerkleyUpdateCreator
                 }
 
             }
-        }
-
-        private void ticketsDisplay_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btn_editTicket_Click(object sender, EventArgs e)
@@ -123,6 +132,27 @@ namespace BerkleyUpdateCreator
             {
                 ticketsDisplay.Items.RemoveAt(ticketsDisplay.SelectedIndex);
             }
+        }
+
+        private void btn_timeNow_Click(object sender, EventArgs e)
+        {
+            meetingDate.Value = DateTime.Now;
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Settings.Default.JiraTicketChecked = SessionStorage.JiraCheckedDefault;
+            Settings.Default.TypeTimeMappings.Clear();
+            Settings.Default.TypeTimeMappings.AddRange(SessionStorage.typeTimeMappings.Select(el => $"{el.Key}{{$*$}}{el.Value}").ToArray());
+            Settings.Default.Save();
+        }
+
+        private void btn_settings_Click(object sender, EventArgs e)
+        {
+            var settingsForm = new SettingsForm();
+            settingsForm.StartPosition = FormStartPosition.CenterParent;
+            settingsForm.ShowDialog();
+            UpdateMeetingTypes();
         }
     }
 }

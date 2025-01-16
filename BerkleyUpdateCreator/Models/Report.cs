@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BerkleyUpdateCreator
+namespace BerkleyUpdateCreator.Models
 {
     public class Report
     {
@@ -24,6 +24,7 @@ namespace BerkleyUpdateCreator
             sb.AppendLine($"# {Date.Day}.{Date.Month} Berkley Update (Official)");
             sb.AppendLine();
             sb.AppendLine($"### Tasks:");
+            sb.AppendLine();
             if (Tickets == null || Tickets.Count == 0)
             {
                 sb.AppendLine("- ");

@@ -52,6 +52,8 @@
             btn_editTicket = new Button();
             btn_deleteTicket = new Button();
             ticketsDisplay = new ListBox();
+            btn_timeNow = new Button();
+            btn_settings = new Button();
             SuspendLayout();
             // 
             // meetingType
@@ -298,10 +300,35 @@
             ticketsDisplay.Name = "ticketsDisplay";
             ticketsDisplay.Size = new Size(512, 164);
             ticketsDisplay.TabIndex = 34;
-            ticketsDisplay.SelectedIndexChanged += ticketsDisplay_SelectedIndexChanged;
             ticketsDisplay.DragDrop += ticketsDisplay_DragDrop;
             ticketsDisplay.DragOver += ticketsDisplay_DragOver;
             ticketsDisplay.MouseDown += ticketsDisplay_MouseDown;
+            // 
+            // btn_timeNow
+            // 
+            btn_timeNow.BackColor = Color.White;
+            btn_timeNow.BackgroundImageLayout = ImageLayout.None;
+            btn_timeNow.FlatStyle = FlatStyle.Flat;
+            btn_timeNow.Location = new Point(314, 154);
+            btn_timeNow.Name = "btn_timeNow";
+            btn_timeNow.Size = new Size(32, 32);
+            btn_timeNow.TabIndex = 35;
+            btn_timeNow.Text = "O";
+            btn_timeNow.UseVisualStyleBackColor = false;
+            btn_timeNow.Click += btn_timeNow_Click;
+            // 
+            // btn_settings
+            // 
+            btn_settings.BackColor = Color.White;
+            btn_settings.BackgroundImageLayout = ImageLayout.None;
+            btn_settings.FlatStyle = FlatStyle.Flat;
+            btn_settings.Location = new Point(1358, 27);
+            btn_settings.Name = "btn_settings";
+            btn_settings.Size = new Size(102, 32);
+            btn_settings.TabIndex = 37;
+            btn_settings.Text = "Settings";
+            btn_settings.UseVisualStyleBackColor = false;
+            btn_settings.Click += btn_settings_Click;
             // 
             // MainForm
             // 
@@ -309,6 +336,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(48, 48, 48);
             ClientSize = new Size(1505, 786);
+            Controls.Add(btn_settings);
+            Controls.Add(btn_timeNow);
             Controls.Add(ticketsDisplay);
             Controls.Add(btn_deleteTicket);
             Controls.Add(btn_editTicket);
@@ -336,6 +365,7 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Name = "MainForm";
             Text = "Berkley Updates";
+            FormClosing += MainForm_FormClosing;
             Load += MainForm_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -366,5 +396,7 @@
         private Button btn_editTicket;
         private Button btn_deleteTicket;
         private ListBox ticketsDisplay;
+        private Button btn_timeNow;
+        private Button btn_settings;
     }
 }

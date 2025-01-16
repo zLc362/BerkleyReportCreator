@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BerkleyUpdateCreator
+namespace BerkleyUpdateCreator.Models
 {
     public class Ticket
     {
@@ -14,6 +14,7 @@ namespace BerkleyUpdateCreator
         public string? Link { get; set; }
         public string Name { get; set; }
         public string? TicketId { get; set; }
+        public bool isJira { get; set; }
         public List<string> Updates { get; set; } = new List<string>();
 
         public Ticket(string[] LinkField, string[] UpdatesField) {
@@ -22,6 +23,7 @@ namespace BerkleyUpdateCreator
             Link = LinkField[0];
             Name = LinkField[1];
             TicketId = Link.Split('/').Last();
+            isJira = true;
             if (UpdatesField != null)
             {
                 Updates = UpdatesField.ToList();
@@ -31,6 +33,7 @@ namespace BerkleyUpdateCreator
         public Ticket(string Title, string[] Updates) {
             titleInput = Title;
             Name = Title;
+            isJira = false;
             if (Updates != null)
             {
                 this.Updates = Updates.ToList();
