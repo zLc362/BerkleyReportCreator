@@ -36,6 +36,8 @@
             label2 = new Label();
             label3 = new Label();
             btn_SubmitTicket = new Button();
+            label4 = new Label();
+            cbx_story = new CheckBox();
             SuspendLayout();
             // 
             // label1
@@ -122,12 +124,36 @@
             btn_SubmitTicket.UseVisualStyleBackColor = true;
             btn_SubmitTicket.Click += btn_SubmitTicket_Click;
             // 
+            // label4
+            // 
+            label4.Font = new Font("Segoe UI", 8F, FontStyle.Bold);
+            label4.ForeColor = Color.LimeGreen;
+            label4.Location = new Point(292, 109);
+            label4.Name = "label4";
+            label4.Size = new Size(256, 76);
+            label4.TabIndex = 24;
+            label4.Text = "When selected, ticket will have Story prefix and will be a bit larger";
+            // 
+            // cbx_story
+            // 
+            cbx_story.AutoSize = true;
+            cbx_story.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            cbx_story.ForeColor = Color.LimeGreen;
+            cbx_story.Location = new Point(292, 82);
+            cbx_story.Name = "cbx_story";
+            cbx_story.Size = new Size(69, 24);
+            cbx_story.TabIndex = 23;
+            cbx_story.Text = "Story";
+            cbx_story.UseVisualStyleBackColor = true;
+            // 
             // TicketForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(48, 48, 48);
             ClientSize = new Size(589, 662);
+            Controls.Add(label4);
+            Controls.Add(cbx_story);
             Controls.Add(btn_SubmitTicket);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -153,5 +179,7 @@
         private Label label2;
         private Label label3;
         private Button btn_SubmitTicket;
+        private Label label4;
+        private CheckBox cbx_story;
     }
 }

@@ -14,48 +14,52 @@ namespace BerkleyUpdateCreator.Models
         public string? Link { get; set; }
         public string Name { get; set; }
         public string? TicketId { get; set; }
-        public bool isJira { get; set; }
+        public bool IsJira { get; set; }
         public List<string> Updates { get; set; } = new List<string>();
+        public bool IsStory { get; set; } = false;
 
-        public Ticket(string[] LinkField, string[] UpdatesField) {
+        public Ticket(string[] LinkField, string[] UpdatesField)
+        {
             Id = Guid.NewGuid();
             if (LinkField.Length < 2) return;
             Link = LinkField[0];
             Name = LinkField[1];
             TicketId = Link.Split('/').Last();
-            isJira = true;
+            IsJira = true;
             if (UpdatesField != null)
             {
                 Updates = UpdatesField.ToList();
             }
             titleInput = String.Join("\n", LinkField);
         }
-        public Ticket(string Title, string[] Updates) {
+        public Ticket(string Title, string[] Updates)
+        {
             titleInput = Title;
             Name = Title;
-            isJira = false;
+            IsJira = false;
             if (Updates != null)
             {
                 this.Updates = Updates.ToList();
             }
         }
-        public string GetFormattedTicket(int? order = null)
+        public string GetFormattedTicket()
         {
             StringBuilder sb = new StringBuilder();
             if (String.IsNullOrEmpty(Link))
             {
-                sb.AppendLine($"### Task{(order==null ? "" : " "+order)}: {Name}");
+                sb.AppendLine($"{(IsStory ? "## Story" : "### Task")}: {Name}");
             }
             else if (TicketId == null)
             {
                 return string.Empty;
-            }else
+            }
+            else
             {
-                sb.AppendLine($"### Task {Order}: [{TicketId} {Name}]({Link})");
+                sb.AppendLine($"{(IsStory ? "## Story" : "### Task")}: [{TicketId} {Name}]({Link})");
 
             }
-            
-            if(Updates == null || Updates.Count == 0)
+
+            if (Updates == null || Updates.Count == 0)
             {
                 sb.AppendLine("- ");
             }
@@ -63,7 +67,6 @@ namespace BerkleyUpdateCreator.Models
             {
                 sb.AppendLine($"- {update}");
             }
-            sb.AppendLine();
             return sb.ToString();
         }
 

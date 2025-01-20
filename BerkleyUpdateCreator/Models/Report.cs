@@ -10,7 +10,7 @@ namespace BerkleyUpdateCreator.Models
     {
         public string Name { get; set; }
         public DateTime Date { get; set; }
-        public string Time {  get; set; }
+        public string Time { get; set; }
         public string? Link { get; set; }
         public string? MeetingInfo { get; set; }
         public string? Location { get; set; }
@@ -18,55 +18,35 @@ namespace BerkleyUpdateCreator.Models
         public List<string> InternalNotes { get; set; } = [];
         public List<string> Questions { get; set; } = [];
 
+        private string lineString(string input) => $"- {input}";
+
+        private string[] displayTasks(bool condition, string[] ifTrue, string[] ifFalse)
+        {
+            return condition ? ifTrue : ifFalse;
+        }
         public string GetReport()
         {
-            StringBuilder sb = new StringBuilder();
-            sb.AppendLine($"# {Date.Day}.{Date.Month} Berkley Update (Official)");
-            sb.AppendLine();
-            sb.AppendLine($"### Tasks:");
-            sb.AppendLine();
-            if (Tickets == null || Tickets.Count == 0)
-            {
-                sb.AppendLine("- ");
-            }
-            else
-            {
-                for (int i = 0; i < Tickets.Count; i++)
-                {
-                    sb.AppendLine(Tickets[i].GetFormattedTicket(i+1));
-                }
-            }
-            
-            sb.AppendLine($"### Internal Notes:");
-            if (InternalNotes == null || InternalNotes.Count==0)
-            {
-                sb.AppendLine("- ");
-            }
-            else
-            {
-                InternalNotes.ForEach(note => sb.AppendLine($"- {note}"));
-            }
-            sb.AppendLine();
+            return $"""
+            # {Date.Day}.{Date.Month} Berkley Update (Official)
 
-            sb.AppendLine($"### Questions:");
-            if (Questions==null || Questions.Count==0)
-            {
-                sb.AppendLine("- ");
-            }
-            else
-            {
-                Questions.ForEach(question => sb.AppendLine($"- {question}"));
-            }
-            sb.AppendLine();
+            ### Tasks:
+            {String.Join("\n", (Tickets.Count > 0 ? Tickets.Select(ticket => ticket.GetFormattedTicket()).ToArray() : ["- "]))}
 
-            sb.AppendLine($"### Meeting Info:");
-            sb.AppendLine($"Name: {Name}");
-            sb.AppendLine($"Time: {Time}");
-            if (!String.IsNullOrEmpty(Link)) sb.AppendLine($"Link: {Link}");
-            if (!String.IsNullOrEmpty(MeetingInfo)) sb.AppendLine(MeetingInfo);
-            if (!String.IsNullOrEmpty(Location)) sb.AppendLine($"Location: {Location}");
+            ### Internal Notes:
+            {String.Join("\n", (InternalNotes.Count > 0 ? (InternalNotes.Select(lineString).ToArray()) : ["- "]))}
 
-            return sb.ToString();
+            ### Questions:
+            {String.Join("\n", (Questions.Count > 0 ? Questions.Select(lineString).ToArray() : ["- "]))}
+
+            ### Meeting Info:
+            Name: {Name}
+            Time: {Time}
+            {String.Join("\n", new List<string>() {
+                    (!String.IsNullOrEmpty(Link) ? $"Link: {Link}\n" : String.Empty),
+                    (!String.IsNullOrEmpty(MeetingInfo) ? MeetingInfo : String.Empty),
+                    (!String.IsNullOrEmpty(Location) ? $"Location: {Location}" : String.Empty)
+                }.Where(line => !String.IsNullOrEmpty(line)))}
+            """;
         }
     }
 }

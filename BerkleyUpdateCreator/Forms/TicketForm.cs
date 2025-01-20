@@ -20,8 +20,9 @@ namespace BerkleyUpdateCreator
             Ticket = ticket;
             if (Ticket != null)
             {
-                cbx_jiraTicketTitle.Checked = Ticket.isJira;
-                if (Ticket.isJira)
+                cbx_jiraTicketTitle.Checked = Ticket.IsJira;
+                cbx_story.Checked = Ticket.IsStory;
+                if (Ticket.IsJira)
                 {
                     ticketLink1.Lines = [Ticket.Link, Ticket.Name];
                 }
@@ -63,6 +64,9 @@ namespace BerkleyUpdateCreator
             {
                 Ticket = new Ticket(ticketLink1.Text, ticketDescription1.Lines);
             }
+
+            Ticket.IsStory = cbx_story.Checked;
+
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
